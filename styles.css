@@ -111,7 +111,7 @@ header ul li a:hover::before {
 }
 
 
-.portfolio {
+.portfolio .scroll {
    
     display: flex;
     width: 100px;
@@ -141,6 +141,7 @@ header ul li a:hover::before {
 	justify-self: center;
 	padding: 4%;
 	position: relative;
+   
 
 }
 
@@ -246,6 +247,8 @@ footer a:hover {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: #55d7b9;
+    text-align: center;
 }
 
 .social-media {
@@ -311,17 +314,16 @@ footer a:hover {
   }
 
   .scroll {
-    
     overflow-x: scroll;
     height: 250px;
     min-width: 300px;
     padding: 10px;
 
-   
+  }
   
   }
 
 
 
-}
+
 
