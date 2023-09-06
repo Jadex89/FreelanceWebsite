@@ -272,3 +272,50 @@ footer a:hover {
     color: #1b8c72;
     transform: translateY(5px);
 }
+
+@media screen and (max-width:550px) {
+
+    header {
+        height:150px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+    content {
+        height:250px;
+        width: 375px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+ footer {
+    height:280px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+ }
+
+ img {
+    max-width: 100%;
+    height: auto;
+    block-size: auto;
+  }
+
+  .scroll {
+    
+    overflow-x: scroll;
+    height: 250px;
+    min-width: 300px;
+    padding: 10px;
+
+   
+  
+  }
+
+
+
+}
+
