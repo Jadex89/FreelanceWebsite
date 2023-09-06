@@ -321,6 +321,12 @@ footer a:hover {
 
   }
   
+  .project-image {
+    height: 100%;
+    min-width: 260px;
+  }
+
+
   }
 
 
