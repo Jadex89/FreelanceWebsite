@@ -111,54 +111,7 @@ header ul li a:hover::before {
 }
 
 
-.portfolio .scroll {
-   
-    display: flex;
-    width: 100px;
-	
-}
 
-.project1,
-.project2,
-.project3 {
-
-    padding: 5px;
-}
-
-.project-image {
-	
-	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
-	transition: all ease-in-out .2s;
-}
-
-.project-image:hover {
-	filter: brightness(.75);
-	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
-}
-
-.project-image-wrapper {
-
-	justify-self: center;
-	padding: 4%;
-	position: relative;
-   
-
-}
-
-.project-image-wrapper:hover > h4 {
-	visibility: visible;
-}
-
-.project-image-wrapper > h4 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: black;
-	visibility: hidden;
-	z-index: 2;
-	transition: all ease-in-out .2s;
-}
 
 .about {
     padding: 20px;
@@ -183,6 +136,89 @@ h3 {
 p {
     padding: 5px;
 }
+
+
+.testimonial-container {
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: aliceblue;
+    overflow-x: scroll;
+   margin-left: 25%;
+    }
+    
+    
+    
+    .testimonial1,
+    .testimonial2,
+    .testimonial3 {
+        width: 400px;
+        height: fit-content;
+        
+        
+    }
+    
+    
+    
+    
+    
+    blockquote {
+        border:none;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        quotes: "\201C""\201D""\2018""\2019";
+        margin: 10px;
+        padding: 5px;
+        background-color: ghostwhite;
+        position: relative;
+    }
+    
+    blockquote  {
+    font-size:16px;
+    margin-top: 30px;
+    padding: 10px;
+    
+    }
+    
+    blockquote:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:30px;
+    color:#1b8c72;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -10px;
+    } 
+    
+    blockquote:after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size:30px;
+    color:#1b8c72;
+    position: absolute;
+    margin-top: 10px;
+    
+      
+    }
+    
+    .testimonial-name,
+    .testimonial-title {
+        text-align:right;
+        padding-right: 10px;
+    }
+    
+    .testimonial-name {
+    font-weight: 700;
+    }
+    
+    .testimonial-title {
+    font-style: italic;
+    margin-top: 0;
+    
+    }
+
+
+
+
 
 .price {
     text-align: end;

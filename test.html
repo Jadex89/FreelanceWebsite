@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="testimonial-slider"> 
+        <div class="testimonial-slide"> 
+          <p>Testimonial 1 text goes here.</p> 
+          <cite>Testimonial 1 author</cite> 
+        </div> 
+        <div class="testimonial-slide"> 
+          <p>Testimonial 2 text goes here.</p> 
+          <cite>Testimonial 2 author</cite> 
+        </div> 
+        <div class="testimonial-slide"> 
+          <p>Testimonial 3 text goes here.</p> 
+          <cite>Testimonial 3 author</cite> 
+        </div> 
+      </div> 
+
+      <style>
+        .testimonial-slider { 
+  overflow: hidden; 
+} 
+ 
+.testimonial-slide { 
+  display: none; 
+} 
+ 
+.testimonial-slide.active { 
+  display: block; 
+} 
+      </style>
+
+<script>
+    var slides = document.querySelectorAll('.testimonial-slide'); 
+var currentSlide = 0; 
+ 
+function nextSlide() { 
+  slides[currentSlide].classList.remove('active'); 
+  currentSlide = (currentSlide + 1) % slides.length; 
+  slides[currentSlide].classList.add('active'); 
+} 
+ 
+setInterval(nextSlide, 5000); 
+</script>
+</body>
+</html>
